@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector3 desireRotation = new Vector3(0, input.x* horizontalSpeed * Time.deltaTime, 0);
-        rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(desireRotation));
+        rigidbody.MoveRotation(rigidbody.rotation * Quaternion.AngleAxis(input.x * horizontalSpeed * Time.deltaTime, Vector3.up));
 
         Vector3 movement = new Vector3(transform.forward.x * input.y * speed * Time.deltaTime, 0, transform.forward.z * input.y * speed * Time.deltaTime);
         rigidbody.MovePosition(transform.position + movement);

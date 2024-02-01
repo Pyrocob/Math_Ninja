@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1731775803817902558}
   - component: {fileID: 174686373953582822}
   - component: {fileID: 2897436809800454322}
-  - component: {fileID: 6449455120319897948}
   m_Layer: 0
   m_Name: enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4491399695012067313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 141.8, y: 4.8, z: 137.6}
+  m_LocalPosition: {x: 141.8, y: 1.02, z: 137.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -137,18 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &6449455120319897948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4491399695012067313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2bd4288a3b3ffa46add7c4d57be2109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6991069347200560170
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +148,8 @@ GameObject:
   - component: {fileID: 627730656193634929}
   - component: {fileID: 9168238920960060028}
   - component: {fileID: 7516928976500560964}
+  - component: {fileID: 8354834577824294403}
+  - component: {fileID: 5682246596421433674}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -256,3 +245,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &8354834577824294403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991069347200560170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6964065, y: 9.933163, z: 42.0282}
+  m_Center: {x: 0.34820318, y: -0.17928791, z: 20.5141}
+--- !u!114 &5682246596421433674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991069347200560170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bd4288a3b3ffa46add7c4d57be2109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpottedUI: {fileID: 0}
